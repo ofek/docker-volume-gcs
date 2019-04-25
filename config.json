@@ -1,0 +1,48 @@
+{
+  "Args": {},
+  "Description": "Google Cloud Storage Volumes",
+  "Documentation": "https://github.com/ofek/docker-volume-gcs",
+  "Entrypoint": [
+    "/usr/local/bin/driver"
+  ],
+  "Env": [],
+  "Interface": {
+    "Socket": "gcsfs.sock",
+    "Types": [
+      "docker.volumedriver/1.0"
+    ]
+  },
+  "Linux": {
+    "AllowAllDevices": false,
+    "Capabilities": [
+      "CAP_SYS_ADMIN"
+    ],
+    "Devices": [
+      {
+        "path": "/dev/fuse"
+      }
+    ]
+  },
+  "Mounts": [
+    {
+      "Description": "Storage credentials",
+      "destination": "/mnt/keys",
+      "options": [
+        "rbind",
+        "ro"
+      ],
+      "name": "keys",
+      "source": "",
+      "settable": [
+        "source"
+      ],
+      "type": "bind"
+    }
+  ],
+  "Network": {
+    "Type": "host"
+  },
+  "PropagatedMount": "/mnt/buckets",
+  "User": {},
+  "Workdir": "/"
+}
