@@ -57,7 +57,7 @@ volumes:
 Then create a container that uses the volume:
 
 ```console
-$ docker run -v media-cy7q3fx2:/data --rm -d --name gcsfs-test alpine tail -f /dev/null
+$ docker run -v <BUCKET_NAME>:/data --rm -d --name gcsfs-test alpine tail -f /dev/null
 ```
 
 or via `docker-compose`:
@@ -165,7 +165,7 @@ at your option.
 
 - [gcsfuse](1)
 - [Brian Goff](https://github.com/cpuguy83) and [Justin Cormack](https://github.com/justincormack) for being helpful in Slack
-  and encouraging my to write this to overcome a [limitation on non-Linux hosts](https://github.com/moby/moby/issues/39093).
+  and encouraging me to write this to overcome a [limitation on non-Linux hosts](https://github.com/moby/moby/issues/39093).
 
 ## Future
 
