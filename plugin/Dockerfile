@@ -32,7 +32,7 @@ RUN if [ $LINT = "true" ]; then \
 RUN go get -u github.com/googlecloudplatform/gcsfuse
 RUN go install github.com/googlecloudplatform/gcsfuse/tools/build_gcsfuse
 RUN mkdir /tmp/gcsfuse
-RUN build_gcsfuse ${GOPATH}/src/github.com/googlecloudplatform/gcsfuse /tmp/gcsfuse ${gcsfuse_version}
+RUN build_gcsfuse ${GOPATH}/src/github.com/googlecloudplatform/gcsfuse /tmp/gcsfuse ${gcsfuse_version} ${GOFLAGS}
 
 # We don't need mount(8) compatibility as we call the binary directly, so only copy that
 RUN mv /tmp/gcsfuse/bin/gcsfuse /tmp/bin/gcsfuse

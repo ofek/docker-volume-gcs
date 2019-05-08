@@ -6,7 +6,7 @@ import sys
 from os import path
 from tempfile import TemporaryDirectory
 
-VERSION = '0.1.0'
+VERSION = '1.0.0'
 GCSFUSE_VERSION = '0.27.0'
 BUILDER_IMAGE = 'docker:stable-dind'
 
