@@ -1,9 +1,9 @@
-# `gcsfs`
+# gcsfs
 
 [![Travis CI](https://api.travis-ci.com/ofek/docker-volume-gcs.svg?branch=master)](https://travis-ci.com/ofek/docker-volume-gcs)
 [![Docker - Pulls](https://img.shields.io/docker/pulls/ofekmeister/gcsfs.svg)](https://hub.docker.com/r/ofekmeister/gcsfs)
 [![License - MIT/Apache-2.0](https://img.shields.io/badge/license-MIT%2FApache--2.0-9400d3.svg)](https://choosealicense.com/licenses)
-[![Say Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/ofek)
+[![Say Thanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/ofekmeister%40gmail.com)
 
 -----
 
@@ -167,9 +167,8 @@ at your option.
 - [Brian Goff](https://github.com/cpuguy83) and [Justin Cormack](https://github.com/justincormack) for being helpful in Slack
   and encouraging me to write this to overcome a [limitation on non-Linux hosts](https://github.com/moby/moby/issues/39093).
 
-## Future
+## Kubernetes
 
-I also want to make a [Kubernetes CSI driver](https://kubernetes-csi.github.io/docs). However, that
-won't happen for a while as it appears to me I'll need to learn everything about everything.
+See [csi-gcs](https://github.com/ofek/csi-gcs).
 
 [1]: https://github.com/GoogleCloudPlatform/gcsfuse
