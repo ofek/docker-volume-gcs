@@ -119,6 +119,8 @@ volumes:
     driver: ofekmeister/gcsfs
     driver_opts:
       key: credentials.json
+      # passing optional [flags](https://github.com/ofek/docker-volume-gcs/blob/master/gcsfuse_flags)
+      flags: "--gid=33 --uid=33 --dir-mode=775 --file-mode=644"
 ```
 
 ## Driver options
